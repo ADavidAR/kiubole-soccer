@@ -1,0 +1,45 @@
+services:
+  db:
+    image: mysql:8.0
+    container_name: ks_mysql
+    restart: always
+    environment:
+      MYSQL_DATABASE: kiubolesoccer
+      MYSQL_USER: ksuser
+      MYSQL_PASSWORD: kspass
+      MYSQL_ROOT_PASSWORD: ks_rootpass
+    volumes:
+      - db_data:/var/lib/mysql
+
+  wordpress:
+    image: wordpress:php8.2-apache
+    container_name: ks_apache
+    depends_on:
+      - db
+    restart: always
+    ports:
+      - "8080:80"
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: ksuser
+      WORDPRESS_DB_PASSWORD: kspass
+      WORDPRESS_DB_NAME: kiubolesoccer
+    volumes:
+      - ks_data:/var/www/html
+      - ./php.ini:/usr/local/etc/php/conf.d/custom.ini
+
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: ks_phpmyadmin
+    depends_on:
+      - db
+    restart: always
+    ports:
+      - "8081:80"
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: ks_rootpass
+
+volumes:
+  db_data:
+  ks_data:
