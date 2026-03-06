@@ -1,0 +1,252 @@
+[
+    {
+        "Id": "c0f1fe1c8c5b588b94a601ad37e2200e0605d3b96b234f1bd0e5da8af1bd5a72",
+        "Created": "2026-02-28T22:12:54.345241573Z",
+        "Path": "docker-entrypoint.sh",
+        "Args": [
+            "mysqld"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 1975,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-03-06T16:14:00.658022991Z",
+            "FinishedAt": "2026-03-06T05:14:04.857109147Z"
+        },
+        "Image": "sha256:99d774bf02a48a1bb1c599920d2571946d31e5940b854b02737d5e95c184358f",
+        "ResolvConfPath": "/var/lib/docker/containers/c0f1fe1c8c5b588b94a601ad37e2200e0605d3b96b234f1bd0e5da8af1bd5a72/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/c0f1fe1c8c5b588b94a601ad37e2200e0605d3b96b234f1bd0e5da8af1bd5a72/hostname",
+        "HostsPath": "/var/lib/docker/containers/c0f1fe1c8c5b588b94a601ad37e2200e0605d3b96b234f1bd0e5da8af1bd5a72/hosts",
+        "LogPath": "/var/lib/docker/containers/c0f1fe1c8c5b588b94a601ad37e2200e0605d3b96b234f1bd0e5da8af1bd5a72/c0f1fe1c8c5b588b94a601ad37e2200e0605d3b96b234f1bd0e5da8af1bd5a72-json.log",
+        "Name": "/ks_mysql",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "kiobole-soccer_db_data:/var/lib/mysql:rw"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "kiobole-soccer_default",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "always",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "kiobole-soccer_db_data",
+                "Source": "/var/lib/docker/volumes/kiobole-soccer_db_data/_data",
+                "Destination": "/var/lib/mysql",
+                "Driver": "local",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "c0f1fe1c8c5b",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "3306/tcp": {},
+                "33060/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "MYSQL_USER=ksuser",
+                "MYSQL_PASSWORD=kspass",
+                "MYSQL_ROOT_PASSWORD=ks_rootpass",
+                "MYSQL_DATABASE=kiubolesoccer",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "GOSU_VERSION=1.19",
+                "MYSQL_MAJOR=8.0",
+                "MYSQL_VERSION=8.0.45-1.el9",
+                "MYSQL_SHELL_VERSION=8.0.45-1.el9"
+            ],
+            "Cmd": [
+                "mysqld"
+            ],
+            "Image": "mysql:8.0",
+            "Volumes": {
+                "/var/lib/mysql": {}
+            },
+            "WorkingDir": "/",
+            "Entrypoint": [
+                "docker-entrypoint.sh"
+            ],
+            "Labels": {
+                "com.docker.compose.config-hash": "254a4bf3e898cf029853aaaa83a3a731a2eb64aede812bad471d288d0f6b82a6",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "",
+                "com.docker.compose.image": "sha256:99d774bf02a48a1bb1c599920d2571946d31e5940b854b02737d5e95c184358f",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "kiobole-soccer",
+                "com.docker.compose.project.config_files": "/home/aduron/kiobole-soccer/docker-compose.yml",
+                "com.docker.compose.project.working_dir": "/home/aduron/kiobole-soccer",
+                "com.docker.compose.service": "db",
+                "com.docker.compose.version": "5.1.0"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "8cf0315cb86763a3c4b8dbd5e8931a10d25e1262870cae1c5b30a192300555fc",
+            "SandboxKey": "/var/run/docker/netns/8cf0315cb867",
+            "Ports": {
+                "3306/tcp": null,
+                "33060/tcp": null
+            },
+            "Networks": {
+                "kiobole-soccer_default": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "ks_mysql",
+                        "db"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "0be4652556d3974719a1d4ca20083f2fdd4a338cdf39e36eb2e51536d898b4ba",
+                    "EndpointID": "75b3be86b7737a65ff78aba861fd5e25d7b8a509aad84f81d1f1745fd3d3acdf",
+                    "Gateway": "172.18.0.1",
+                    "IPAddress": "172.18.0.3",
+                    "MacAddress": "9e:a0:5a:45:ae:f9",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "ks_mysql",
+                        "db",
+                        "c0f1fe1c8c5b"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:1681328bca475f89da97cf8b874aa8a6ef3f839bde63e94d65e0f3bb0a62c94f",
+            "size": 3045,
+            "annotations": {
+                "com.docker.official-images.bashbrew.arch": "amd64",
+                "org.opencontainers.image.base.digest": "sha256:f480e42968c8a382785bae3fd6c1b2372770f31389a599b1cbcf04f04eb2831a",
+                "org.opencontainers.image.base.name": "oraclelinux:9-slim",
+                "org.opencontainers.image.created": "2026-02-05T22:08:21Z",
+                "org.opencontainers.image.revision": "7a8f81aad11e871baf1dbc755dbff1652e13cba5",
+                "org.opencontainers.image.source": "https://github.com/docker-library/mysql.git#7a8f81aad11e871baf1dbc755dbff1652e13cba5:8.0",
+                "org.opencontainers.image.url": "https://hub.docker.com/_/mysql",
+                "org.opencontainers.image.version": "8.0.45"
+            },
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    }
+]

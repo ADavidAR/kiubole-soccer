@@ -1,0 +1,284 @@
+[
+    {
+        "Id": "eaadd67b8ec37f3a820301b23563f999d0e89505efa2fd33d03ba4cb36e198f3",
+        "Created": "2026-02-28T22:12:54.513988247Z",
+        "Path": "docker-entrypoint.sh",
+        "Args": [
+            "apache2-foreground"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 1973,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-03-06T16:14:00.668246637Z",
+            "FinishedAt": "2026-03-06T05:14:04.419367894Z"
+        },
+        "Image": "sha256:bb4b56895aa3afd18788951b09279ecf7a81bc9e64ed33ae304810f10742521f",
+        "ResolvConfPath": "/var/lib/docker/containers/eaadd67b8ec37f3a820301b23563f999d0e89505efa2fd33d03ba4cb36e198f3/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/eaadd67b8ec37f3a820301b23563f999d0e89505efa2fd33d03ba4cb36e198f3/hostname",
+        "HostsPath": "/var/lib/docker/containers/eaadd67b8ec37f3a820301b23563f999d0e89505efa2fd33d03ba4cb36e198f3/hosts",
+        "LogPath": "/var/lib/docker/containers/eaadd67b8ec37f3a820301b23563f999d0e89505efa2fd33d03ba4cb36e198f3/eaadd67b8ec37f3a820301b23563f999d0e89505efa2fd33d03ba4cb36e198f3-json.log",
+        "Name": "/ks_apache",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "kiobole-soccer_ks_data:/var/www/html:rw",
+                "/home/aduron/kiobole-soccer/php.ini:/usr/local/etc/php/conf.d/custom.ini:rw"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "kiobole-soccer_default",
+            "PortBindings": {
+                "80/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "8080"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "always",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "/home/aduron/kiobole-soccer/php.ini",
+                "Destination": "/usr/local/etc/php/conf.d/custom.ini",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "volume",
+                "Name": "kiobole-soccer_ks_data",
+                "Source": "/var/lib/docker/volumes/kiobole-soccer_ks_data/_data",
+                "Destination": "/var/www/html",
+                "Driver": "local",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "eaadd67b8ec3",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "80/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "WORDPRESS_DB_NAME=kiubolesoccer",
+                "WORDPRESS_DB_HOST=db:3306",
+                "WORDPRESS_DB_USER=ksuser",
+                "WORDPRESS_DB_PASSWORD=kspass",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "PHPIZE_DEPS=autoconf \t\tdpkg-dev \t\tfile \t\tg++ \t\tgcc \t\tlibc-dev \t\tmake \t\tpkg-config \t\tre2c",
+                "PHP_INI_DIR=/usr/local/etc/php",
+                "APACHE_CONFDIR=/etc/apache2",
+                "APACHE_ENVVARS=/etc/apache2/envvars",
+                "PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64",
+                "PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64",
+                "PHP_LDFLAGS=-Wl,-O1 -pie",
+                "GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC",
+                "PHP_VERSION=8.2.30",
+                "PHP_URL=https://www.php.net/distributions/php-8.2.30.tar.xz",
+                "PHP_ASC_URL=https://www.php.net/distributions/php-8.2.30.tar.xz.asc",
+                "PHP_SHA256=bc90523e17af4db46157e75d0c9ef0b9d0030b0514e62c26ba7b513b8c4eb015"
+            ],
+            "Cmd": [
+                "apache2-foreground"
+            ],
+            "Image": "wordpress:php8.2-apache",
+            "Volumes": {
+                "/var/www/html": {}
+            },
+            "WorkingDir": "/var/www/html",
+            "Entrypoint": [
+                "docker-entrypoint.sh"
+            ],
+            "Labels": {
+                "com.docker.compose.config-hash": "03aeb96e929981e0eefc3cb67076c3e4a597a075d03d077a07f4da0ee670f4f9",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "db:service_started:false",
+                "com.docker.compose.image": "sha256:bb4b56895aa3afd18788951b09279ecf7a81bc9e64ed33ae304810f10742521f",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "kiobole-soccer",
+                "com.docker.compose.project.config_files": "/home/aduron/kiobole-soccer/docker-compose.yml",
+                "com.docker.compose.project.working_dir": "/home/aduron/kiobole-soccer",
+                "com.docker.compose.service": "wordpress",
+                "com.docker.compose.version": "5.1.0"
+            },
+            "StopSignal": "SIGWINCH"
+        },
+        "NetworkSettings": {
+            "SandboxID": "c178750239ffc03c198ef609ecb452cfba8810df021ce3fc3a247098ef4e1eca",
+            "SandboxKey": "/var/run/docker/netns/c178750239ff",
+            "Ports": {
+                "80/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "8080"
+                    },
+                    {
+                        "HostIp": "::",
+                        "HostPort": "8080"
+                    }
+                ]
+            },
+            "Networks": {
+                "kiobole-soccer_default": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "ks_apache",
+                        "wordpress"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "0be4652556d3974719a1d4ca20083f2fdd4a338cdf39e36eb2e51536d898b4ba",
+                    "EndpointID": "f3273239ac9a984b67853b3b0c3a5bf52831d20938fa17450acaa480e88a2eb3",
+                    "Gateway": "172.18.0.1",
+                    "IPAddress": "172.18.0.4",
+                    "MacAddress": "06:5d:df:e8:76:cb",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "ks_apache",
+                        "wordpress",
+                        "eaadd67b8ec3"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:00c2c685ad9dcde2631090fc6886fbc56ac88a9c80b18b3a4c72ea275021e76b",
+            "size": 5543,
+            "annotations": {
+                "com.docker.official-images.bashbrew.arch": "amd64",
+                "org.opencontainers.image.base.digest": "sha256:b0e035726be89fffccf49c93ddb963ac6973c4edb1e87d8329269b7120ec119a",
+                "org.opencontainers.image.base.name": "php:8.2-apache",
+                "org.opencontainers.image.created": "2026-02-11T19:30:56Z",
+                "org.opencontainers.image.revision": "e9f9f56f29897fffad5a6b895beaecd93a11833c",
+                "org.opencontainers.image.source": "https://github.com/docker-library/wordpress.git#e9f9f56f29897fffad5a6b895beaecd93a11833c:latest/php8.2/apache",
+                "org.opencontainers.image.url": "https://hub.docker.com/_/wordpress",
+                "org.opencontainers.image.version": "6.9.1-php8.2-apache"
+            },
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    }
+]
